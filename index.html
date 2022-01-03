@@ -63,7 +63,7 @@
         <!-- End #lead-down -->
     </div>
     <!-- End #lead -->
-
+<!--
     <div id="about">
         <div class="container">
             <div class="row">
@@ -80,21 +80,54 @@
             </div>
         </div>
     </div>
+-->
     <!-- End #about -->
 
     <div id="experience" class="background-alt">
         <h2 class="heading">경력</h2>
         <div id="experience-timeline">
-            <div data-date="April 2019 – ">
-                <h3>CNTTECH</h3>
-                <h4>산업기능요원(웹 개발)</h4>
+            <div data-date="2019.04 ~ 2021.03">
+                <h3>CNT TECH</h3>
+                <h4>Spring 웹 개발</h4>
+            </div>
+            <div data-date="2021.08 ~ 2021.12">
+                <h3>(Naver) 부스트캠프 AI TECH 2기</h3>
+                <h4>Computer Vision</h4>
             </div>
         </div>
     </div>
     <!-- End #experience -->
 
     <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
+        <h2 class="heading">Projects (2021.08~2021.12)</h2>
+        <div class="container">
+            <div class="row"  style="text-align:left">
+            	<div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/traffic.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>인공지능을 이용한 신호등 시스템</h3>
+                        <p>
+                            Object Tracking을 사용해 노약자를 위해 신호를 연장하고 보행자가 없는 경우엔 불필요한 차량 정지 신호를 없애 주어 효율적이고 더욱 안전하게 신호등 개편했습니다.
+                            <b>
+	                            <br><br>
+	                            Object Detection을 이용한 Object Tracking, 실시간 추론 및 결과 Streaming, 신호 체계 알고리즘 등 모델을 제외한 프로젝트의 전반적인 부분을 개발했습니다.
+	                            <br>
+
+                        	</b>
+                            <br><br>사용 기술 : Pytorch, ONNX, FastAPI, DOCKER, Deep Sort
+                        </p>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects (2019.04~2021.03)</h2>
         <div class="container">
             <div class="row"  style="text-align:left">
                 <div class="project shadow-large">
@@ -106,51 +139,16 @@
                         <h3>회의실 관리 시스템</h3>
                         <p>
                             회의실과 회의를 관리하는 시스템입니다.
-                            <br><br>선택한 회의실의 사용 가능한 시간을 보여주어 예약을 도우며 예약시 참여 인원에게 회의 내용과 참고 파일까지 메일 발송하게 구현했습니다.
-
+                            <b>
+	                            <br><br>
+	                            각 회의실의 상태를 보여주고 관리하여 예약이 가능하게했습니다. 참여 인원에 대해 메일 발송 기능을 추가하여 회의 준비 및 회의록 등의 관리를 편리하게 했습니다. 회원 가입, 로그인 등 프로젝트 설계를 제외한 모든 부분을 개발했습니다.
+                        	</b>
                             <br><br>사용 기술 : Spring, MySql, Github, Jenkis
                         </p>
                     </div>
                     <!-- End .project-info -->
                 </div>
                 <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/watch.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Watch Server</h3>
-                        <p>
-                            인수 인계 받은 프로젝트로 회사에서 서비스 중인 모든 사이트들의 상태 등을 실시간 조회하며 오류 발생 시 지속적인 알림 문자 발송하는 프로제트입니다.
-                            <br><br>사이트 정보와 현재 상태를 상세히 볼 수 있는 페이지를 구현했습니다.
-
-                            <br><br>사용 기술 : Spring, MySql, Github, Jenkis
-                        </p>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-                                 
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/cms.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>주문 중개 사이트</h3>
-                        <p>
-                            주문 중개를 담당하는 프로젝트로 포스 사이트에서는 주문 및 배달을 담당하고 WATCH쪽에서는 주문 중개 현황 및 과거 로그 등을 볼 수 있습니다.
-                            <br><br>완성 단계에서 투입되어 검색 오류 및 sql 수정과 사용 기능 개선을(통계 그래프화 및 상세 미리보기 등) 했습니다.
-
-                            <br><br>사용 기술 : Spring, MySql, MongoDB, Github, Jenkis
-                        </p>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
                 <div class="project shadow-large">
                     <div class="project-image">
                         <img src="images/doro.jpg" />
@@ -160,15 +158,16 @@
                         <h3>카페 홈페이지</h3>
                         <p>
                             해외 카페 프렌차이즈의 홈페이지 프로젝트입니다.
-                            <br><br>중간 단계에 투입되어 소셜 로그인, 쿠폰 사용, 회원 관리 등을 구현했습니다.
-                            
+                            <b>
+	                            <br><br>
+	                            프로젝트 중간 단계에 투입되어 소셜 로그인, 쿠폰 사용, 회원 관리 등을 구현했습니다.
+                        	</b>
                             <br><br>사용 기술 : Spring, MySql, Github, Jenkis
                         </p>
                     </div>
                     <!-- End .project-info -->
                 </div>
                 <!-- End .project -->
-                               
                 <div class="project shadow-large">
                     <div class="project-image">
                         <img src="images/kdMart.jpg" />
@@ -178,10 +177,56 @@
                         <h3>경동 시장몰</h3>
                         <p style="text-align:left">
                             쇼핑몰 사이트로 관리자쪽에서는 입상점 관리와 상품등록 등을 처리하며 클라이언트 사이트에서는 고객들이 상품을 구매 할 수 있습니다.
-                            <br><br>관리자쪽에서는 회원관리, 엑셀폼을 이용한 상품 대량 등록, 쿠폰, 스케줄러 등을 맡았습니다.
-                            <br>쇼핑몰 형태인 클라이언트 사이트에서는 메뉴바, 최근본 상품 목록, 쿠폰, 회원 관리 등을 맡았습니다.
+                            <b><br><br>
+	                            관리자쪽에서는 회원관리, 엑셀폼을 이용한 상품 대량 등록, 쿠폰, 스케줄러 등을 맡았습니다.
+	                            <br>쇼핑몰 형태인 클라이언트 사이트에서는 메뉴바, 최근본 상품 목록, 쿠폰, 회원 관리 등을 맡았습니다.
+                        	</b>
+                            <br><br>사용 기술 : Spring, MySql, Github, Jenkis
+                        </p>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/watch.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Watch Server</h3>
+                        <p>
+                            인수 인계 받은 프로젝트를 운영팀의 요구사항에 맞게 리뉴얼하였습니다. 회사에서 서비스 중인 모든 사이트들의 상태 등을 실시간 조회하며 오류 발생 시 지속적인 알림 문자 발송을 통해 관리자에게 알려줍니다.
+                            <br><br>
+                            <b>
+                            	페이지 전체를 리뉴얼하고 고도화했습니다.
+                            	<br>
+                            	기타 유지 보수
+                            </b>
 
                             <br><br>사용 기술 : Spring, MySql, Github, Jenkis
+                        </p>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->           
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/cms.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>주문 중개 사이트</h3>
+                        <p>
+                            주문 중개를 담당하는 프로젝트로 (클라이언트)포스 서버와 관리 서버로 나누어 포스에서는 주문 및 배달 등을 관리합니다. 관리 서버에서는 주문 중개 현황 및 과거 로그, 클라이언트 등을 관리합니다.
+                            <br><br>
+                            <b>
+                        		관리 서버 고도화 (통계 그래프 및 상세 미리보기 등)
+                        		<br>
+                        		외부 API 추가
+                        	</b>
+                            <br><br>사용 기술 : Spring, MySql, MongoDB, Github, Jenkis
                         </p>
                     </div>
                     <!-- End .project-info -->
@@ -195,12 +240,9 @@
     <div id="skills">
         <h2 class="heading">Skills & Tools</h2>
         <ul>
-            <li>JavaScript</li>
             <li>Python</li>
+            <li>JavaScript</li>
             <li>Java</li>
-            <li>C</li>
-            <li>C#</li>
-            <li>C++</li>
             <li>Spring</li>
             <li>MySql</li>
             <li>MongoDB</li>
